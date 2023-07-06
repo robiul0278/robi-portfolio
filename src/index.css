@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+*{
+  scroll-behavior: smooth;
+}
+body{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+::selection{
+  background-color: #21696450;
+}
+.text-stroke {
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blue;
+  letter-spacing: 3px;
+}
+
+.elite{
+  font-family: 'Special Elite', sans-serif;
+}
+.inter{
+  font-family: 'Inter', sans-serif;
+}
+.longImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  
+  transition: 8s all ease;
+
+  &:hover {
+    object-position: bottom;
+  }
+}
+.container-primary{
+  @apply border-[0.5px] inter text-white mb-8 border-[#565656] px-3 py-5 md:p-10 rounded-2xl ;
+ 
+}
+
+.upsetShadow{
+  border: none;
+  box-shadow: -2px -2px 3px #2e2e2e,
+  2px 2px 3px rgba(0, 0, 0, 0.286);
+}
+.wrapper{
+ 
+  width: 100%;
+  margin: 0 auto;
+}
+
+.input{
+  font-family: 'Special Elite', cursive;
+  width: 100%;
+  border: none;
+  background: #1e1e1e;
+  box-shadow: inset 3px 3px 5px #070707,
+              inset -3px -3px 10px #494949;
+  font-size: 14px;
+  padding: 17px;
+  border-radius: 10px;
+} 
+.social:hover{
+  box-shadow: 2px 2px 3px #2e2e2e,
+              -1px -2px 3px rgba(0, 0, 0, 0.286);
+}
+.social{
+  @apply hover:bg-[#ffffff93] transition-all hover:text-[#1f1f1f] rounded-full p-3 upsetShadow;
+  background: #1e1e1e;
+  font-size: 14px;
+}
